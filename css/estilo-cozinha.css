@@ -157,6 +157,20 @@ img.cozinha{
     display: block;
     animation: slideDown .5s forwards;
 }
+@media(max-width:940px){
+    .js-accordion dd{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .js-accordion dt::after{
+        content: '';
+        margin-left: 10px;
+    }
+    .js-accordion dt.ativo::after{
+        content: '';
+        margin-left: 10px;
+    }
+}
 
 @keyframes slideDown{
     from{
