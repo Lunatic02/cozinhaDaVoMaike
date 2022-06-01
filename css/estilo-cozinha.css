@@ -1,0 +1,173 @@
+@import url(estilo-geral.css);
+img.cozinha{
+    width: 1920px;
+}
+@media(max-width:940px){
+    .fundo-cima{
+        display: none;
+    }
+   img.cozinha{
+       max-width: 100%;
+   }
+    img{
+        max-width: 90%;
+    }
+}
+.titulo-categorias{
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    font-size: 8rem;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154px;
+    color: #595959;
+}
+@media(max-width:940px){
+    .titulo{
+        font-size: 4rem;
+    }
+}
+
+.categorias{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.categoria-massa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.categoria-salgado{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.categoria-doce{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.categoria-bebida{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media(max-width:940px){
+    .categoria-massa{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .categoria-salgado{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .categoria-doce{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .categoria-bebida{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+/* terminar de colocar as categorias acima!!!! */
+
+.categoria-img img{
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);;
+}
+@media(max-width:940px){
+    .categoria-img img{
+        margin: 0 auto;
+    }
+}
+.categoria-texto{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.categoria-titulo{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #595959;
+}
+@media(max-width:940px){
+    .categoria-titulo{
+        font-size: 36px;
+    }
+}
+.categoria-texto-interno{
+    font-weight: lighter;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.dt-categoria{
+    font-size: 36px;
+    color: #595959;
+}
+
+.dd-categoria a{
+    color: black;
+    font-weight: lighter;
+    font-size: 36px;
+    margin: 10px;
+}
+.dd-categoria a:hover{
+    border-bottom: #595959 2px solid;
+}
+@media(max-width:940px){
+    .categoria-texto-interno{
+        font-size: 26px;
+    }
+    .dt-categoria{
+        font-size: 26px;
+        color: #595959;
+    }
+    .dd-categoria a{
+        color: black;
+        font-weight: lighter;
+        font-size: 26px;
+        margin: 10px;
+    }
+}
+
+.dt-categoria{
+    cursor: pointer;
+}
+
+.js-accordion dd{
+    display: none;
+}
+
+.js-accordion dt::after{
+    content: '⤵';
+    margin-left: 10px;
+}
+.js-accordion dt.ativo::after{
+    content: '⤴';
+    margin-left: 10px;
+}
+
+.js-accordion dd.ativo{
+    display: block;
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        max-height: 0;
+    }
+    to{
+        opacity: 1;
+        max-height: 100px;
+    }
+}
+
+
+

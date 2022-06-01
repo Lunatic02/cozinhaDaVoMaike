@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: url(../img/fundo-tela.jpg);
+    background-size: cover;
+}
+
+@media(max-width:1500px)
+{
+    .body{
+        background-size: 2000px;
+    }
+}
+.navbar-home{
+    height: 60px;
+    background-color: #FEB549;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+@media(max-width:700px){
+    .navbar-home{
+        font-size: 26px;
+        padding: 10px;
+    }
+}
+
+.navbar-home a{
+    color: white;
+    display: block;
+}
+.navbar-home a:hover{
+    color: #c9c9c9;
+    transition: .3s;
+}
+.navbar-home li{
+    margin-top: 11px;
+}
+.navbar-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+.main-menu{
+    display: grid;
+    justify-content: center;
+    margin-top: 170px;
+}
+
+.botao-logo{
+    background-color: #FEB549;
+    color: white;
+    height: 75px;
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    border: none;
+    border-radius: 4px;
+}
+.botao-logo:hover{
+    background-color: #A26700;
+    transition: .3s;
+}   
+.botao-logo a{
+    color: white;
+    display: block;
+}
+@media (max-width: 700px){
+    .logo{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .botao-logo{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
