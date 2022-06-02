@@ -40,39 +40,55 @@ img.cozinha{
 .categoria-massa{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img texto";
 }
 .categoria-salgado{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto img";
 }
 .categoria-doce{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img texto";
 }
 
 .categoria-bebida{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto img";
+    
 }
 @media(max-width:940px){
     .categoria-massa{
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-areas: "img"
+        "texto";
     }
     .categoria-salgado{
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-areas: "img"
+        "texto";
     }
     .categoria-doce{
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-areas: "img"
+        "texto";
     }
     .categoria-bebida{
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-areas: "img"
+        "texto";
     }
 }
 /* terminar de colocar as categorias acima!!!! */
+.categoria-img{
+    grid-area: img;
+}
 
 .categoria-img img{
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
@@ -87,6 +103,7 @@ img.cozinha{
 .categoria-texto{
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    grid-area: texto;
 }
 .categoria-titulo{
     font-weight: 700;
