@@ -40,54 +40,54 @@ img.cozinha{
 .categoria-massa{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "img texto";
+    grid-template-areas: "imagem texto";
 }
 .categoria-salgado{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "texto img";
+    grid-template-areas: "texto imagem";
 }
 .categoria-doce{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "img texto";
+    grid-template-areas: "imagem texto";
 }
 
 .categoria-bebida{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "texto img";
+    grid-template-areas: "texto imagem";
     
 }
 @media(max-width:940px){
     .categoria-massa{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "img"
+        grid-template-areas: "imagem"
         "texto";
     }
     .categoria-salgado{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "img"
+        grid-template-areas: "imagem"
         "texto";
     }
     .categoria-doce{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "img"
+        grid-template-areas: "imagem"
         "texto";
     }
     .categoria-bebida{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "img"
+        grid-template-areas: "imagem"
         "texto";
     }
 }
 /* terminar de colocar as categorias acima!!!! */
 .categoria-img{
-    grid-area: img;
+    grid-area: imagem;
 }
 
 .categoria-img img{
